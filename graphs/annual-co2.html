@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta charset="utf-8"><title>Results and Findings - Retrofit Analysis</title>
+    <meta content="Mastodon C" name="author">
+    <link href="https://fonts.googleapis.com/css?family=Asap:700" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="/css/theme.css" rel="stylesheet" type="text/css">
+    <link href="/css/r4f-charts.css" rel="stylesheet" type="text/css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(".dropdown-toggle").dropdown()
+    </script>
+    <script type="text/javascript">
+      $(".alert").alert()
+    </script>
+
+  </head>
+  
+  <body class="theme">
+    <!-- Below here is where the chart goes -->
+    <div id="chart" class="chart"></div>
+    <!-- Above here is where the chart goes -->
+    <p>Annual carbon dioxide emissions per m2</p>
+    <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+    <p>Note that three of the properties used wood fuel. This has been assumed as carbon neutral.</p>
+  </body>
+
+  
+  <script src="http://d3js.org/d3.v3.js"></script>
+  <!-- Chart Javascript -->
+  
+  <script src="/js/annual-co2-emissions.js"></script>
+  <script type="text/javascript">
+    annual_co2_emissions('#chart');
+  </script>
+
+</html>
+

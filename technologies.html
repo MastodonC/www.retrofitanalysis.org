@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta charset="utf-8"><title>Technology Results and Findings - Retrofit Analysis</title>
+    <meta content="Mastodon C" name="author">
+    <link href="https://fonts.googleapis.com/css?family=Asap:700" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="css/theme.css" rel="stylesheet" type="text/css">
+    <link href="css/r4f-charts.css" rel="stylesheet" type="text/css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(".dropdown-toggle").dropdown()
+    </script>
+    <script type="text/javascript">
+      $(".alert").alert()
+    </script>
+
+  </head>
+  
+  <body class="theme">
+    <header id="masthead">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container-fluid">
+            <h1>
+              <a class="brand" href="/">Retrofit&nbsp;Analysis <i class="icon-leaf"> </i></a>
+            </h1>
+            <ul class="nav pull-right" id="pagemenu" role="navigation">
+              <li><a href="/">Home</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Charts <i class="icon-caret-down"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="charts.html">Overview</a></li>
+                  <li><a href="technologies.html">Technologies</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Retrofit Links <i class="icon-caret-down"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="https://connect.innovateuk.org/web/retrofit">Retrofit Programme <i class="icon-external-link"></i></a></li>
+                  <li><a href="http://est.amee.com">Embed Database <i class="icon-external-link"> </i></a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Downloads <i class="icon-caret-down"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/retrofit-revealed-by-technology-strategy-board.pdf">Full Report <i class="icon-download-alt"> </i></a></li>
+                  <li><a href="/dataset.html">Full Dataset</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- End Navigation -->
+    </header>
+    <div class="pageContainer">
+      <div id="content" role="main">
+        <div class="container">
+          <div class="row">
+            <div class="span12" style="padding-left: 5px">
+              <ul class="nav nav-tabs" id="myTab" style="margin-top: 100px;">
+                <li class="active"><a href="#ashp" data-toggle="tab">ASHP</a></li>
+                <li><a href="#gshp" data-toggle="tab">GSHP</a></li>
+	        <li><a href="#electric" data-toggle="tab">Electric</a></li>
+	        <li><a href="#gas_fired_boiler" data-toggle="tab">Gas Fired Boiler</a></li>
+	        <li><a href="#biomass_boiler" data-toggle="tab">Biomass Boiler</a></li>
+	        <li><a href="#micro_chp" data-toggle="tab">Micro CHP</a></li>
+	        <li><a href="#solar_pv" data-toggle="tab">Solar PV</a></li>
+	        <li><a href="#solar_thermal" data-toggle="tab">Solar Thermal</a></li>
+	        <li><a href="#mvhr" data-toggle="tab">MVHR</a></li>
+	        <li><a href="#exhaust_air_heat_recovery" data-toggle="tab">Exhaust Air Heat Recovery</a></li>
+	        <li><a href="#decentralised_mev" data-toggle="tab">Decentralised MEV</a></li>
+	        <li><a href="#cavity_insulation" data-toggle="tab">Cavity Insulation</a></li>
+	        <li><a href="#ewi_solid_wall" data-toggle="tab">EWI Solid Wall</a></li>
+	        <li><a href="#iwi_solid_wall" data-toggle="tab">IWI Solid Wall</a></li>
+	        <li><a href="#triple_glazed" data-toggle="tab">Triple Glazed</a></li>
+	        <li><a href="#roof_or_loft_insulation" data-toggle="tab">Roof or Loft Insulation</a></li>
+	        <li><a href="#floor_insulation" data-toggle="tab">Floor Insulation</a></li>
+	        <li><a href="#low_energy_lighting" data-toggle="tab">Low Energy Lighting</a></li>
+	        <li><a href="#new_heating_controls" data-toggle="tab">New Heating Controls</a></li>
+	        <li><a href="#voltage_optimisation" data-toggle="tab">Voltage Optimisation</a></li>
+              </ul>              
+              <div class="tab-content">
+                <div class="tab-pane active" id="ashp">
+                  <div id="chart_ashp" class="chart"></div>
+                  <p>Annual carbon dioxide emissions per m2 - ASHP</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div>
+                <div class="tab-pane" id="gshp">
+                  <div id="chart_gshp" class="chart"></div>
+                  <p>Annual carbon dioxide emissions per m2 - GSHP</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div>
+	        <div class="tab-pane" id="electric">
+                  
+                  <div id="chart_electric" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - Electric</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="gas_fired_boiler">
+                  
+                  <div id="chart_gas_fired_boiler" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - Gas Fired Boiler</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="biomass_boiler">
+                  
+                  <div id="chart_biomass_boiler" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - biomass_boiler</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="micro_chp">
+                  
+                  <div id="chart_micro_chp" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - micro_chp</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="solar_pv">
+                  
+                  <div id="chart_solar_pv" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - Solar PV</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="solar_thermal">
+                  
+                  <div id="chart_solar_thermal" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - Solar Thermal</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="mvhr">
+                  
+                  <div id="chart_mvhr" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - MVHR</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="exhaust_air_heat_recovery">
+                  
+                  <div id="chart_exhaust_air_heat_recovery" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - Exhaust Air Heat Recovery</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="decentralised_mev">
+                  
+                  <div id="chart_decentralised_mev" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - Decentralised MEV</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="cavity_insulation">
+                  
+                  <div id="chart_cavity_insulation" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - Cavity Insulation</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="ewi_solid_wall">
+                  
+                  <div id="chart_ewi_solid_wall" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - EWI Solid Wall</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="iwi_solid_wall">
+                  
+                  <div id="chart_iwi_solid_wall" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - IWI Solid Wall</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="triple_glazed">
+                  
+                  <div id="chart_triple_glazed" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - Triple Glazed</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="roof_or_loft_insulation">
+                  
+                  <div id="chart_roof_or_loft_insulation" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - Roof or Loft Insulation</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="floor_insulation">
+                  
+                  <div id="chart_floor_insulation" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - Floor Insulation</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="low_energy_lighting">
+                  
+                  <div id="chart_low_energy_lighting" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - Low Energy Lighting</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="new_heating_controls">
+                  
+                  <div id="chart_new_heating_controls" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - New Heating Controls</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> 
+	        <div class="tab-pane" id="voltage_optimisation">
+                  
+                  <div id="chart_voltage_optimisation" class="chart"></div>
+                  
+                  <p>Annual carbon dioxide emissions per m2 - Voltage Optimisation</p>
+                  <p>For comparison, the emissions of a typical home in 1990 were 85 kg carbon dioxide / m2 / year</p>
+                </div> <!-- End Tab Pane -->
+              </div> <!-- End Tab Content -->
+            </div><!-- End Tabs -->
+          </div><!-- End Row -->
+        </div><!-- End Container --> 
+      </div><!-- End main content -->
+    </div><!-- End Page Container -->
+    <footer class="section" id="footer" role="contentinfo">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span4">
+            <h3>Mastodon C</h3>
+            <ul class="icons">
+              <li>
+                <i class="icon-twitter"></i>
+                <a href="http://twitter.com/MastodonC">@MastodonC</a></li>
+              <li>
+                <i class="icon-globe"></i>
+                <a href="http://www.mastodonc.com/">Mastodon C Home</a></li>
+            </ul>
+          </div>
+          <div class="span4">
+            <h3>Technology Strategy Board</h3>
+            <ul class="icons">
+              <li>
+                <i class="icon-twitter"></i>
+                <a href="http://twitter.com/innovate_uk">@innovate_uk</a></li>
+              <li>
+                <i class="icon-globe"></i>
+                <a href="http://www.innovateuk.org/">TSB Home</a></li>
+
+            </ul>
+          </div>
+          <div class="span4">
+            <h3>SE<sup>2</sup></h3>
+            <ul class="icons">
+              <li>
+                <i class="icon-twitter"></i>
+                <a href="http://twitter.com/se2limited">@se2limited</a></li>
+              <li>
+                <i class="icon-globe"></i>
+                <a href="http://www.se-2.co.uk/">SE<sup>2</sup> Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+</div>
+</body>
+
+<script>
+  $('#myTab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+  })
+</script>
+
+
+<script src="http://d3js.org/d3.v3.js"></script>
+<!-- Chart Javascript -->
+<script src="js/technology-co2.js"></script>
+<script type="text/javascript">
+  technology_co2_emissions('#chart_ashp', 'ashp');
+  technology_co2_emissions('#chart_gshp', 'gshp');
+  technology_co2_emissions('#chart_electric', 'electric');
+  technology_co2_emissions('#chart_gas_fired_boiler', 'gas_fired_boiler');
+  technology_co2_emissions('#chart_biomass_boiler', 'biomass_boiler');
+  technology_co2_emissions('#chart_micro_chp', 'micro_chp');
+  technology_co2_emissions('#chart_solar_pv', 'solar_pv');
+  technology_co2_emissions('#chart_solar_thermal', 'solar_thermal');
+  technology_co2_emissions('#chart_mvhr', 'mvhr');
+  technology_co2_emissions('#chart_exhaust_air_heat_recovery', 'exhaust_air_heat_recovery');
+  technology_co2_emissions('#chart_decentralised_mev', 'decentralised_mev');
+  technology_co2_emissions('#chart_cavity_insulation', 'cavity_insulation');
+  technology_co2_emissions('#chart_ewi_solid_wall', 'ewi___solid_wall');
+  technology_co2_emissions('#chart_iwi_solid_wall', 'iwi___solid_wall');
+  technology_co2_emissions('#chart_triple_glazed', 'triple_glazed');
+  technology_co2_emissions('#chart_roof_or_loft_insulation', 'roof_or_loft_insulation');
+  technology_co2_emissions('#chart_floor_insulation', 'floor_insulation');
+  technology_co2_emissions('#chart_low_energy_lighting', 'low_energy_lighting');
+  technology_co2_emissions('#chart_new_heating_controls', 'new_heating_controls');
+  technology_co2_emissions('#chart_voltage_optimisation', 'voltage_optimisation');
+</script>
+
+
+
+</html>
+

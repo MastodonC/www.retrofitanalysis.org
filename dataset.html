@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta charset="utf-8"><title>Raw Data</title>
+    <meta content="Retrofit Analysis" name="author">
+    <link href="https://fonts.googleapis.com/css?family=Asap:700" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="css/theme.css" rel="stylesheet" type="text/css">
+    <link href="css/r4f-charts.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap-dropdown.js" type="text/javascript"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap-alert.js" type="text/javascript"></script>
+  </head>
+  
+  <body class="theme">
+    <header id="masthead">
+
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container-fluid">
+            <h1>
+              <a class="brand" href="/">Retrofit&nbsp;Analysis <i class="icon-leaf"> </i></a>
+            </h1>
+            <ul class="nav pull-right" id="pagemenu" role="navigation">
+              <li><a href="/">Home</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Charts <i class="icon-caret-down"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="charts.html">Overview</a></li>
+                  <!-- <li><a href="technologies.html">Technologies</a></li> -->
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Retrofit Links <i class="icon-caret-down"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="https://connect.innovateuk.org/web/retrofit">Retrofit Programme <i class="icon-external-link"></i></a></li>
+                  <li><a href="http://est.amee.com">Embed Database <i class="icon-external-link"> </i></a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Downloads <i class="icon-caret-down"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/retrofit-revealed-by-technology-strategy-board.pdf">Full Report <i class="icon-download-alt"> </i></a></li>
+                  <li><a href="/dataset.html">Full Dataset</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- End Navigation -->
+
+    </header>
+    <div class="pageContainer">
+      <div id="content" role="main" class="container">
+        <div class="row">          
+          <div class="hero-unit" style="margin-top: 30px;">
+            <h1>Raw Data for Retrofit</h1>
+            <img src="/css/images/retrofit-image.jpg">
+            <div class="span6">
+              <a class="btn btn-danger btn-large pull-right" href="/retrofit-data.tar.gz">
+                Get the File (53MB) <i class="icon-circle-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <h1>What’s here</h1>
+            <p>
+              To produce the analysis results hosted on retrofitanalysis.org, we interrogated the full set of raw data hosted on
+              embed. In the course of our analysis we discovered that we first had to write code to convert the raw data into usable data.
+              From this page, you are invited to download the <a href="/retrofit-data.tar.gz">full dataset</a> of usable data and the <a href="https://github.com/MastodonC/r4f-data">code</a> we used to extract and analyse the data from the Embed database.
+            </p>
+            
+            <p>
+              The usable dataset includes all the energy (gas and electrical) meters used to generate the charts shown on
+              retrofitanalysis.org. The data is in 5 minute time intervals, which was the interval specified for the meters in each
+              retrofit property.
+            </p>
+            
+            <h1>Purpose of the dataset</h1>
+            
+            <p>
+              We expect that this dataset will be a key resource for conducting your own research.
+            </p>
+            
+            <p>
+              Here are a few examples of the sort of questions we think the dataset could be used to research:
+            </p>
+            
+            <ul>
+              <li>How significant are the occupants to the annual energy consumption of these homes?</li>
+              <li>Are there correlations in the retrofit performance outcomes in properties with different packages of measures?</li>
+              <li>Can occupancy routines be accurately inferred from energy consumption data recorded at a five minute resolution?</li>
+              <li>What could be the implications for the UK electricity grid, if there were a mass transition in retrofitted homes from gas heating to electric forms of heating?</li>
+              <li>Is there any evidence for unintended negative consequences of deep retrofit of homes?</li>
+            </ul>
+            
+            <p>
+              We would be really interested in hearing your thoughts on relevant research questions and proposals for further analysis,
+              potentially in collaboration with the Technology Strategy Board. Please use
+              the <a href="https://connect.innovateuk.org/web/retrofit">Retrofit forum on the _Connect Platform</a> to contact us.
+            </p>
+
+            <h1>File structure</h1>
+
+            <p>
+              The main download is a single folder, containing a subfolder per property and a file per energy meter. The files contain the
+              TSB property ID, property UUID, device ID, timestamp, value, units, sensor type and period type for each energy meter.
+            </p>
+
+            <p>
+              The separate <a href="/device_metadata.csv">metadata</a> table shows the property, device ID, device type, and measurement units for each energy meter.
+            </p>
+
+            <p>
+              There is also a <a href="/property_areas.csv">property area file</a> which has the number of square metres for each property so that emissions per area can be calculated. This file shows the property, with TSB and leading zeros stripped off and the area in square metres in csv format..
+            </p>
+
+            <p>
+              The combined files are in a compressed .tar.gz format. The compressed file size is roughly 53 MB, uncompressed it is 1.6 GB.
+            </p>
+
+            <h1>Advice on format</h1>
+
+            <p>
+            All files are in tab-separated variable format, which is a standard machine-readable form.
+            </p>
+
+            <p>
+            If you have trouble reading them in Excel, please use the “Text to Columns” command to specify that the columns are separated by
+            tabs.
+            </p>
+
+            <p>
+              If reading them into R, use read.csv and set sep=’\t’. 
+            </p>
+
+            <h1>License</h1>
+
+            <p>The Embed database is made available under the <a href="http://opendatacommons.org/licenses/odbl/1.0/">Open Database License</a>.</p>
+
+            <p>Any rights in individual contents of the database are licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported license</a>.</p>
+            
+          </div>
+        </div>
+      </div>
+      <footer class="section" id="footer" role="contentinfo">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span4">
+            <h3>Mastodon C</h3>
+            <ul class="icons">
+              <li>
+                <i class="icon-twitter"></i>
+                <a href="http://twitter.com/MastodonC">@MastodonC</a></li>
+              <li>
+                <i class="icon-globe"></i>
+                <a href="http://www.mastodonc.com/">Mastodon C Home</a></li>
+            </ul>
+          </div>
+          <div class="span4">
+            <h3>Technology Strategy Board</h3>
+            <ul class="icons">
+              <li>
+                <i class="icon-twitter"></i>
+                <a href="http://twitter.com/innovate_uk">@innovate_uk</a></li>
+              <li>
+                <i class="icon-globe"></i>
+                <a href="http://www.innovateuk.org/">TSB Home</a></li>
+
+            </ul>
+          </div>
+          <div class="span4">
+            <h3>SE<sup>2</sup></h3>
+            <ul class="icons">
+              <li>
+                <i class="icon-twitter"></i>
+                <a href="http://twitter.com/se2limited">@se2limited</a></li>
+              <li>
+                <i class="icon-globe"></i>
+                <a href="http://www.se-2.co.uk/">SE<sup>2</sup> Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
