@@ -4,39 +4,23 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
     <meta charset="utf-8"><title>Results and Findings - Retrofit Analysis</title>
     <meta content="Mastodon C" name="author">
-    <link href="https://fonts.googleapis.com/css?family=Asap:700" rel="stylesheet" type="text/css">
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/responsive.css" rel="stylesheet" type="text/css">
-    <link href="/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="/css/fonts.css" rel="stylesheet" type="text/css">
-    <link href="/css/theme.css" rel="stylesheet" type="text/css">
-    <link href="/css/r4f-charts.css" rel="stylesheet" type="text/css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      $(".dropdown-toggle").dropdown()
-    </script>
-    <script type="text/javascript">
-      $(".alert").alert()
-    </script>
-
+    <link href="/www.retrofitanalysis.org/css/r4f-charts.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>    
   </head>
   
-  <body class="theme">
+  <body>
     <!-- Below here is where the chart goes -->
     <div id="chart" class="chart"></div>
     <!-- Above here is where the chart goes -->
     <p>Carbon dioxide emissions plotted against air-tightness post-retrofit</p>
   </body>
   
-  <script src="http://d3js.org/d3.v3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.js"></script>
   <!-- Chart Javascript -->
   
-  <script src="/js/air-tightness.js"></script>
+  <script src="js/air-tightness.js"></script>
   <script type="text/javascript">
     air_tightness('#chart');
   </script>
 
 </html>
-
